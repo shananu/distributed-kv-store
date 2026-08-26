@@ -34,6 +34,7 @@ not a production system — scope is deliberately narrow (see "Out of Scope" bel
     ┌───────────────────┼───────────────────┐
     ▼                   ▼                   ▼
 ┌─────────┐ ┌─────────┐ ┌─────────┐
+
 │ node-1 │ │ node-4 │ │ node-2 │ <- preference list
 │(primary)│ │(replica)│ │(replica)│ for this key
 └─────────┘ └─────────┘ └─────────┘
