@@ -36,7 +36,9 @@ not a production system — scope is deliberately narrow (see "Out of Scope" bel
 ┌─────────┐ ┌─────────┐ ┌─────────┐
 
 │ node-1 │ │ node-4 │ │ node-2 │ <- preference list
+
 │(primary)│ │(replica)│ │(replica)│ for this key
+
 └─────────┘ └─────────┘ └─────────┘
 
 PUT: coordinator writes to all 3, waits for quorum (2/3) before ack
