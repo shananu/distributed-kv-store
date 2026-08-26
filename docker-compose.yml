@@ -1,0 +1,45 @@
+services:
+  node-1:
+    build: .
+    environment:
+      - NODE_ID=node-1
+      - ALL_NODES=node-1,node-2,node-3,node-4,node-5
+      - REPLICATION_FACTOR=3
+    ports:
+      - "8001:8000"
+
+  node-2:
+    build: .
+    environment:
+      - NODE_ID=node-2
+      - ALL_NODES=node-1,node-2,node-3,node-4,node-5
+      - REPLICATION_FACTOR=3
+    ports:
+      - "8002:8000"
+
+  node-3:
+    build: .
+    environment:
+      - NODE_ID=node-3
+      - ALL_NODES=node-1,node-2,node-3,node-4,node-5
+      - REPLICATION_FACTOR=3
+    ports:
+      - "8003:8000"
+
+  node-4:
+    build: .
+    environment:
+      - NODE_ID=node-4
+      - ALL_NODES=node-1,node-2,node-3,node-4,node-5
+      - REPLICATION_FACTOR=3
+    ports:
+      - "8004:8000"
+
+  node-5:
+    build: .
+    environment:
+      - NODE_ID=node-5
+      - ALL_NODES=node-1,node-2,node-3,node-4,node-5
+      - REPLICATION_FACTOR=3
+    ports:
+      - "8005:8000"
